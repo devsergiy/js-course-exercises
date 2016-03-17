@@ -76,16 +76,16 @@ describe("if/else/switch tasks", function() {
     });
 
     describe("Сгенерированный тест на проверку всех возможных случаев", function() {
-      var score, expected;
-      for (var i = 0; i < 5; i++) {
-        for (var j = 1; j <= 20; j+=7) {
-          score = i*20 + j;
-          expected = i + 1;
-          it("возвращает " + expected + " когда score=" + score , function() {
+      it("возвращает корректные результаты" , function() {
+        var score, expected;
+        for (var i = 0; i < 5; i++) {
+          for (var j = 1; j <= 20; j+=7) {
+            score = i*20 + j;
+            expected = i + 1;
             expect(assignGrade(score)).to.be.eq(expected);
-          });
+          }
         }
-      }
+      });
     });
   });
 });
