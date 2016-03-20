@@ -21,30 +21,20 @@ describe("if/else/switch tasks", function() {
 
   describe("helloWorld", function() {
     describe("Возвращает результат", function() {
-      var result, input;
+      expectedResults = {
+        en: 'Hello',
+        es: 'Hola',
+        default: 'Привет'
+      }
 
-      result = 'Hello';
-      input  = 'en';
-      it(result + " когда мы передали " + input, function() {
-        expect(helloWorld(input)).to.be.eq(result);
-      });
-
-      result = 'Hola';
-      input  = 'es';
-      it(result + " когда мы передали " + input, function() {
-        expect(helloWorld(input)).to.be.eq(result);
-      });
-
-      result = 'Привет';
-      input  = 'ru';
-      it(result + " когда мы передали " + input, function() {
-        expect(helloWorld(input)).to.be.eq(result);
-      });
-
-      input  = 'de';
-      it(result + " когда мы передали " + input, function() {
-        expect(helloWorld(input)).to.be.eq(result);
-      });
+      for (var lang in expectedResults) {
+        (function(lang, result) {
+          it(result + " когда мы передали " + lang, function() {
+            console.log(result + " когда мы передали " + lang)
+            expect(helloWorld(lang)).to.be.eq(result);
+          });
+        })(lang, expectedResults[lang])
+      }
     });
   });
 
