@@ -1,0 +1,5 @@
+function getGeometricObject(opts) {
+}
+
+function Animal(name, type) {
+}

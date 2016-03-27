@@ -6,3 +6,6 @@
 
 ## Exercises 3
 ### [Arrays](https://github.com/spetrunin/js-course-exercises/blob/master/lesson3/task.md)
+
+## Exercises 5
+### [Objects](https://github.com/spetrunin/js-course-exercises/blob/master/lesson5/task.md)
