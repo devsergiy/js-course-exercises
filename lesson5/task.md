@@ -29,15 +29,6 @@ opts = {
 }
 ```
 
-###### Прямоугольник
-```javascript
-opts = {
-  type: 'reactangle',
-  a: 10,
-  b: 20
-}
-```
-
 ###### Треугольник
 ```javascript
 opts = {
