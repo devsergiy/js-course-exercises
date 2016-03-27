@@ -47,6 +47,7 @@ a = getGeometricObject(opts);
 > Object {type: "sometype", a: 10, b: 11, c: 12, d: 15}
 a.getSquare()
 > 10
+```
 
 ### Animals
 
