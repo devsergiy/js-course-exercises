@@ -2,11 +2,13 @@
 
 ### Geometric shapes
 
-Создайте функцию getGeometricObject(), которая будет возвращать объект с заданными параметрами и методом getSquare(). Функция должна принимать параметр opts - объект, содержащий разные свойства для разных типов объекта (примеры содержимого смотреть ниже).
+Создайте функцию getGeometricObject(), которая будет возвращать объект с заданными параметрами и методом getSquare(). Функция должна принимать разное количество параметров, первый из которых тип объекта, остальные зависят от типа.
+
+Подсказка: использовать arguments
 
 
 ```javascript
-function getGeometricObject(opts) {
+function getGeometricObject() {
 }
 ```
 
@@ -14,36 +16,26 @@ function getGeometricObject(opts) {
 
 ###### Квадрат
 ```javascript
-opts = {
-  type: 'square',
-  a: 10
-}
+getGeometricObject('square', 10)
 ```
+2-й параметр - длина стороны квадрата
 
 ###### Прямоугольник
 ```javascript
-opts = {
-  type: 'reactangle',
-  a: 10,
-  b: 20
-}
+getGeometricObject('rectangle', 10, 20)
 ```
+2-й и 3-й параметры - длина сторон прямоугольника
 
 ###### Треугольник
 ```javascript
-opts = {
-  type: 'triangle',
-  a: 10,
-  b: 20,
-  c: 25
-}
+getGeometricObject('triangle', 10, 20, 25)
 ```
+2-4й параметры - длина сторон треугольника
 Примечание: полагаем что всегда передаются правильные длины сторон треугольника, т.е. a + b > c
 
 Пример:
 ```javascript
-opts = { type: 'sometype', a: 10, b: 11, c: 12, d: 15 };
-a = getGeometricObject(opts);
+a = getGeometricObject('sometype', 10, 11, 12, 15);
 > Object {type: "sometype", a: 10, b: 11, c: 12, d: 15}
 a.getSquare()
 > 10
