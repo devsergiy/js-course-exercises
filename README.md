@@ -9,3 +9,6 @@
 
 ## Exercises 5
 ### [Objects](https://github.com/spetrunin/js-course-exercises/blob/master/lesson5/task.md)
+
+## Module 1
+### [Robots](https://github.com/spetrunin/js-course-exercises/blob/master/module1/task.md)
