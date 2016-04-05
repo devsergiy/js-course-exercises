@@ -25,16 +25,32 @@ function Weapon(name) {
 - robots
 
 У поля есть методы:
-addRobot()
-startBattle()
-size()
+
+- addRobot() - добавляет робота к битве
+- startBattle() - стартует сражение
+- size() - возвращает количество добавленных роботов
 
 - Битва заканчивается когда остался только один робот.
 - Битва может начаться только когда на поле больше 1 робота
 - Битву начинает первый робот появившийся на поле и дальше ходы делаются поочередно
-- На каждом шаге в консоль выводится ходы роботов
+- На каждом шаге в консоль выводятся ходы роботов:
 - В конце в консоле должен быть выведен победитель
 - Погибших роботов можно перемещать в какой-то внутренний массив
+
+Пример вывода
+
+```
+Round 1
+Robot1 attack with 10 power area damage
+Robot2 receives 10 points damage
+Robot3 receives 10 points damage
+Robot3 out of game
+Round 2
+Robot2 attack with 50 power single damage
+Robot1 receives 50 points damage
+Robot1 out of game
+Robot2 wins!!!
+```
 
 ### Robot
 
